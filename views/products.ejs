@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title><%= title %></title>
+    <link href="/css/templatemo_style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="templatemo_container">
+    <div id="templatemo_top_panel">
+        <div id="templatemo_language_section">
+            <a href="#"><img src="/images/templatemo_flag_01.gif" alt="flag 1" /></a>
+            <a href="#"><img src="/images/templatemo_flag_02.gif" alt="flag 2" /></a>
+            <a href="#"><img src="/images/templatemo_flag_03.gif" alt="flag 3" /></a>
+        </div>
+        <div id="templatemo_shopping_cart">
+            Shopping Cart <span>(<a href="#">0 items</a>)</span>
+        </div>
+    </div>
+
+    <div id="templatemo_header">
+        <img src="/images/templatemo_site_header.jpg" alt="Flower Shop" />
+    </div>
+
+    <div id="templatemo_menu_panel">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/products" class="current">Products</a></li>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/contact">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <div id="templatemo_content">
+        <div id="templatemo_content_left">
+            <h1>Tat Ca San Pham</h1>
+            <p>Chung toi cung cap da dang cac loai hoa tuoi dep cho moi dip.</p>
+
+            <div class="cleaner_with_height">&nbsp;</div>
+
+            <h2>Danh Sach Hoa</h2>
+            <% products.forEach(function(product) { %>
+            <div class="product_box">
+                <h3><%= product.name %></h3>
+                <img src="<%= product.image %>" alt="<%= product.name %>" />
+                <p><%= product.desc %></p>
+                <div class="price">PRICE:<span><%= product.price %></span></div>
+                <div class="buynow"><a href="#">Buy Now</a></div><a href="#">Details</a>
+            </div>
+            <% }); %>
+
+            <div class="cleaner_with_height">&nbsp;</div>
+        </div>
+
+        <div id="templatemo_content_right">
+            <div class="templatemo_right_section">
+                <h4>Categories</h4>
+                <div class="templatemo_right_section_content">
+                    <ul>
+                        <li><a href="#">Hoa Tuoi</a></li>
+                        <li><a href="#">Hoa Kho</a></li>
+                        <li><a href="#">Hoa Cuoi</a></li>
+                        <li><a href="#">Hoa Sinh Nhat</a></li>
+                        <li><a href="#">Hoa Khai Truong</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="cleaner">&nbsp;</div>
+    </div>
+
+    <div id="templatemo_footer_panel">
+        <div id="footer_left">
+            <img src="/images/mastercard.gif" alt="Master Card" />
+            <img src="/images/visa.gif" alt="Visa Card" />
+            <img src="/images/paypal.gif" alt="PayPal" />
+        </div>
+        <div id="footer_right">
+            Copyright &copy; 2026 Flower Shop
+        </div>
+        <div class="cleaner">&nbsp;</div>
+    </div>
+</div>
+</body>
+</html>
