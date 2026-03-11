@@ -22,6 +22,17 @@ app.get('/products', (req, res) => {
     res.render('products', { title: 'San Pham - Flower Shop', products: products });
 });
 
+app.get('/about', (req, res) => {
+    const info = {
+        name: 'Flower Shop',
+        established: 2020,
+        description: 'Cua hang hoa tuoi uy tin hang dau TP.HCM',
+        address: '123 Nguyen Hue, Quan 1, TP.HCM',
+        phone: '0901234567'
+    };
+    res.render('about', { title: 'Gioi Thieu - Flower Shop', info: info });
+});
+
 app.listen(PORT, () => {
     console.log(`Server running on http://localhost:${PORT}`);
 });
