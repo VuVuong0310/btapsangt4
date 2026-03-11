@@ -33,6 +33,17 @@ app.get('/about', (req, res) => {
     res.render('about', { title: 'Gioi Thieu - Flower Shop', info: info });
 });
 
+app.get('/contact', (req, res) => {
+    const contact = {
+        address: '123 Nguyen Hue, Quan 1, TP.HCM',
+        phone: '0901234567',
+        email: 'info@flowershop.vn',
+        hours: '8:00 - 21:00 hang ngay',
+        facebook: 'facebook.com/flowershop'
+    };
+    res.render('contact', { title: 'Lien He - Flower Shop', contact: contact });
+});
+
 app.listen(PORT, () => {
     console.log(`Server running on http://localhost:${PORT}`);
 });

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title><%= title %></title>
+    <link href="/css/templatemo_style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="templatemo_container">
+    <div id="templatemo_top_panel">
+        <div id="templatemo_language_section">
+            <a href="#"><img src="/images/templatemo_flag_01.gif" alt="flag 1" /></a>
+            <a href="#"><img src="/images/templatemo_flag_02.gif" alt="flag 2" /></a>
+            <a href="#"><img src="/images/templatemo_flag_03.gif" alt="flag 3" /></a>
+        </div>
+        <div id="templatemo_shopping_cart">
+            Shopping Cart <span>(<a href="#">0 items</a>)</span>
+        </div>
+    </div>
+
+    <div id="templatemo_header">
+        <img src="/images/templatemo_site_header.jpg" alt="Flower Shop" />
+    </div>
+
+    <div id="templatemo_menu_panel">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/products">Products</a></li>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/contact" class="current">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <div id="templatemo_content">
+        <div id="templatemo_content_left">
+            <h1>Lien He Voi Chung Toi</h1>
+            <p><strong>Dia chi:</strong> <%= contact.address %></p>
+            <p><strong>Dien thoai:</strong> <%= contact.phone %></p>
+            <p><strong>Email:</strong> <%= contact.email %></p>
+            <p><strong>Gio lam viec:</strong> <%= contact.hours %></p>
+            <p><strong>Facebook:</strong> <%= contact.facebook %></p>
+
+            <div class="cleaner_with_height">&nbsp;</div>
+
+            <h2>Gui Tin Nhan</h2>
+            <form method="post" action="#">
+                <p>Ho ten: <input type="text" name="name" /></p>
+                <p>Email: <input type="email" name="email" /></p>
+                <p>Noi dung: <textarea name="message" rows="5" cols="40"></textarea></p>
+                <p><input type="submit" value="Gui" class="button" /></p>
+            </form>
+        </div>
+
+        <div id="templatemo_content_right">
+            <div class="templatemo_right_section">
+                <h4>Thong Tin Nhanh</h4>
+                <div class="templatemo_right_section_content">
+                    <p>Giao hang mien phi noi thanh</p>
+                    <p>Ho tro 24/7</p>
+                    <p>Bao hanh hoa tuoi 3 ngay</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="cleaner">&nbsp;</div>
+    </div>
+
+    <div id="templatemo_footer_panel">
+        <div id="footer_left">
+            <img src="/images/mastercard.gif" alt="Master Card" />
+            <img src="/images/visa.gif" alt="Visa Card" />
+            <img src="/images/paypal.gif" alt="PayPal" />
+        </div>
+        <div id="footer_right">
+            Copyright &copy; 2026 Flower Shop
+        </div>
+        <div class="cleaner">&nbsp;</div>
+    </div>
+</div>
+</body>
+</html>
